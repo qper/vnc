@@ -32,7 +32,6 @@ RUN apt-get update && apt-get install -y \
     libegl1-mesa-dev \
     libevent-dev \
     libfontconfig1-dev \
-    libgcrypt11-dev \
     libgl1-mesa-dev \
     libgles2-mesa-dev \
     libglu1-mesa-dev \
@@ -44,7 +43,6 @@ RUN apt-get update && apt-get install -y \
     libopus-dev \
     libpci-dev \
     libpulse-dev \
-    libsrtp0-dev \
     libssl-dev \
     libudev-dev \
     libwayland-dev \
