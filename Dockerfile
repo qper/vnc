@@ -3,6 +3,7 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y \
     bc \
     bison \
+    build-essential \
     ccache \
     clang-6.0 \
     dbus-x11\
@@ -11,7 +12,6 @@ RUN apt-get update && apt-get install -y \
     flex \
     freeglut3-dev \
     fuse \
-    g++-4.9 \
     git \
     git-extras \
     gperf \
