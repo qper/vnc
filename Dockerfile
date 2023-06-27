@@ -1,39 +1,95 @@
 FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    libssl-dev \
-    libffi-dev \
-    python3 \
-    python3-dev \
-    python3-pip \
-    zlib1g-dev \
-    libssl-dev \
-    libncurses5-dev \
-    libffi-dev \
-    libsqlite3-dev \
-    libreadline-dev \
+    bc \
+    bison \
+    ccache \
+    clang-6.0 \
+    dbus-x11\
+    doxygen \
+    evtest \
+    flex \
+    freeglut3-dev \
+    fuse \
+    g++-4.9 \
+    git \
+    git-extras \
+    gperf \
+    graphviz \
+    gyp \
+    lcov \
+    libarchive-dev \
+    libasound2-dev \
+    libavcodec-dev \
+    libavformat-dev \
+    libavutil-dev \
     libbz2-dev \
-    liblzma-dev \
-    libgdbm-dev \
-    libdb-dev \
-    libdb++-dev \
-    libpcre3-dev \
-    libxml2-dev \
-    libxslt1-dev \
-    libyaml-dev \
+    libcap-dev \
+    libcups2-dev \
+    libdbus-1-dev \
+    libdrm-dev \
+    libdrm-dev \
+    libegl1-mesa-dev \
+    libevent-dev \
+    libfontconfig1-dev \
+    libgcrypt11-dev \
+    libgl1-mesa-dev \
+    libgles2-mesa-dev \
+    libglu1-mesa-dev \
+    libgstreamer1.0-dev \
     libjpeg-dev \
-    libpng-dev \
-    libtiff-dev \
-    libgif-dev \
-    libcairo2-dev \
-    libpango1.0-dev \
-    libgtk2.0-dev \
-    libgtk-3-dev \
-    libopencv-dev \
-    libboost-dev \
-    libboost-python-dev \
-    && apt-get clean
+    libjsoncpp-dev \
+    libminizip-dev \
+    libnss3-dev \
+    libopus-dev \
+    libpci-dev \
+    libpulse-dev \
+    libsrtp0-dev \
+    libssl-dev \
+    libudev-dev \
+    libwayland-dev \
+    libwebp-dev \
+    libxcb1-dev \
+    libxcb-glx0-dev \
+    libxcb-icccm4-dev \
+    libxcb-image0-dev \
+    libxcb-keysyms1-dev \
+    libxcb-randr0-dev \
+    libxcb-render-util0-dev \
+    libxcb-shape0-dev \
+    libxcb-shm0-dev \
+    libxcb-sync-dev \
+    libxcb-xfixes0-dev \
+    libxcb-xinerama0-dev \
+    libxcomposite-dev \
+    libxcursor-dev \
+    libxdamage-dev \
+    libxrandr-dev \
+    libxrender-dev \
+    libxss-dev \
+    libxtst-dev \
+    libyaml-dev \
+    locales \
+    mesa-common-dev \
+    mesa-utils \
+    mono-complete \
+    multitail \
+    ninja-build \
+    perl \
+    puppet \
+    python \
+    ruby \
+    sudo \
+    tzdata \
+    usbutils \
+    usbview \
+    vim \
+    wget \
+    xsltproc \
+    xvfb \
+    zlib1g-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 
 RUN pip3 install --no-cache-dir \
     numpy \
