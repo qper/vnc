@@ -60,7 +60,6 @@ RUN apt-get update && apt-get install -y \
     libopenblas-dev \
     libarmadillo-dev \
     libmariadb-dev \
-    libmysqlclient-dev \
     libpq-dev \
     libsqlite3-dev \
     libsqlite0-dev \
