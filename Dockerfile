@@ -30,8 +30,6 @@ RUN apt-get update && apt-get install -y \
     libpango1.0-dev \
     libgtk2.0-dev \
     libgtk-3-dev \
-    libqt4-dev \
-    libqt5-dev \
     libopencv-dev \
     libboost-dev \
     libboost-python-dev \
@@ -80,8 +78,6 @@ RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
     libssh2-1-dev \
     libnghttp2-dev \
-    libmongoc-1.0-dev \
-    libbson-1.0-dev \
     libssl1.1 \
     libcrypto++-dev \
     libcrypto++-utils \
@@ -101,11 +97,9 @@ RUN apt-get update && apt-get install -y \
     libxslt1-dev \
     libxerces-c-dev \
     libxerces2-java \
-    libxerces-c3.1 \
     libxerces-c3-dev \
     libxalan-c-dev \
     libxalan2-java \
-    libxalan-c111-dev \
     libxalan2-java-doc \
     && apt-get clean
 
