@@ -91,7 +91,6 @@ RUN apt-get update && apt-get install -y \
     xsltproc \
     xvfb \
     zlib1g-dev \
-    ubuntu-desktop \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && date +%s > ~/date_s.txt
 
 
